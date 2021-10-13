@@ -1,0 +1,68 @@
+
+
+<!--refer to the READme page for the details about this web application-->
+
+
+
+<html>
+  <head>
+    <title>Course Shoppee</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width ,initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="styles.css"/>
+	<style>
+	body{
+	background-image:url('Screenshot (714).png');
+	background-repeat:no-repeat;
+	background-size:cover;
+	}
+	a:hover{
+	text-decoration:none;
+	font-weight:bold;
+	}
+	</style>
+  </head>
+ <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+          <div class="container">
+              <div class="navbar-header">
+                  <a href="index.html" class="navbar-brand" style="font-weight:bold">Course Shoppee</a>
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                  </button>
+              </div>
+              <div class="collapse navbar-collapse" id="myNavbar">
+                  <ul class="nav navbar-nav navbar-right">
+                    <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a>
+                    </li>
+					<li><a href="sign_up.html"><span class="glyphicon glyphicon-user"></span> Sign up
+                    </a></li>
+                  </ul>
+              </div>
+          </div>         
+      </nav>
+	<body>
+ <div class="container">
+            <div class="row row-center">
+			<div class="col-md-6 col-sm-12" style="margin-left:25%;margin-top:10%;">
+                    <div class="form-group" style="border-style:solid;border-width:1px;border-color:#d9ded9;background-color:black;opacity:0.6;padding-left:15%;padding-right:15%;padding-top:5%;padding-bottom:7%;">
+					<h3 style="font-weight:bold;color:white;text-align:center;font-family:'Brush Script MT',cursive;">Sign up and start learning!</h3><br>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Full Name" required></input><br>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Email"  pattern=".+@gmail\.com" required></input><br>
+                        <input type="password" class="form-control" id="password" name="password" placeholder="Password"  pattern=".{6,}" required></input><br>
+						<input type="password" class="form-control" id="cpassword" name="cpassword" placeholder="Confirm Password"  pattern=".{6,}" required></input><br>
+                        <button class="btn btn-primary btn-block" name="create" >SIGN UP</button><br><br>
+						<p style="color:gray;text-align:center;">Already a member?<a href="login.html" style="color:white;">Log in.</a></p>
+					</div>
+			</div>
+			</div>
+</div>
+</body>
+</html>
+
+

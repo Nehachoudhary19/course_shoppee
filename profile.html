@@ -1,0 +1,207 @@
+
+<!--refer to the READme page for the details about this web application-->
+
+<html>
+  <head>
+    <title>Course Shoppee</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width ,initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="styles.css"/>
+	<style>
+	body{
+	background-image:url('Screenshot (714).png');
+	background-repeat:no-repeat;
+	background-size:cover;
+	
+	width:100%;
+	}
+	a:hover{
+	text-decoration:none;
+	font-weight:bold;
+	}
+	
+	</style>
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+          <div class="container">
+              <div class="navbar-header">
+                  <a href="home.html" class="navbar-brand" style="font-weight:bold">Course Shoppee</a>
+			  </div>
+		  <div class="dropdown">
+           <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-left:70%;margin-top:1%;background-color:#222222;color:white;"><span class="glyphicon glyphicon-user"></span> Neha Choudhary <span class="caret"></span></button>
+		    <ul class="dropdown-menu" style="margin-left:85%;margin-top:1%;background-color:#222222;">
+			<li><a class="dropdown-item" href="home.html" style="color:white;">Home</a></li>
+            <li><a class="dropdown-item" href="profile.html" style="color:white;">Profile</a></li>
+            <li><a class="dropdown-item" href="history.html" style="color:white;">History</a></li>
+            <li><a class="dropdown-item" href="settings.html" style="color:white;">Settings</a></li>
+            <li><a class="dropdown-item" href="helpcenter.html" style="color:white;">Help Center</a></li>
+		    <li><a class="dropdown-item" href="#" style="color:white;">Logout</a></li>
+          </ul></div>	
+		  </div> 
+      </nav>
+	  <div class="container" style="margin-top:5%;margin-left:18%;">
+	    <div class="row row-center">
+		    <div class="col-xs-12 col-sm-9">
+			    <form class="form-horizontal">
+				    <div class="panel panel-default">
+					    <div class="panel-body text-center">
+						    <img src="Screenshot (729).png" class="img-circle profile-avatar" style="width:40%" alt="User avatar">
+						</div>
+					</div>
+					<div class="panel panel-default">
+					    <div class="panel-heading"> 
+						    <h4 class="panel-title">User Info</h4>
+						</div>
+						<div class="panel-body">
+						    <div class="form-group">
+							    <label class="col-sm-2 control-label">Username
+								</label>
+								 <div class="col-sm-10">
+								<input type="text" class="form-control"></input>
+								</div>
+							</div>
+							<div class="form-group">
+                                <label class="col-sm-2 control-label">Location</label>
+                                <div class="col-sm-10">
+                                <select class="form-control">
+                                <option selected="">Select country</option>
+                                <option>India</option>
+                                <option>Canada</option>
+                                <option>Denmark</option>
+                                <option>Estonia</option>
+                                <option>France</option>
+                                </select>
+                                </div>
+                            </div>
+							<div class="form-group">
+							    <label class="col-sm-2 control-label">Gender</label>
+								<div class="col-sm-10">
+								    <input type="radio" id="radio"><label for="radio">Female</label></input><br>
+									<input type="radio" id="radioo"><label for="radioo">Male</label></input><br>
+									<input type="radio" id="radiooo"><label for="radiooo">Unknown</label></input><br>
+								</div>
+							</div>
+							<div class="form-group">
+                            <label class="col-sm-2 control-label">Address</label>
+                            <div class="col-sm-10">
+                            <textarea rows="3" class="form-control"></textarea>
+                            </div>
+                            </div>
+							<div class="form-group">
+                                <label class="col-sm-2 control-label">Top Skills</label>
+                                <div class="col-sm-10">
+                                <select class="form-control">
+								<option selected="">Tell about your top skills...</option>
+								<option>Machine Learning</option>
+								<option>Software Development</option>
+                                <option>Marketing</option>
+                                <option>Business Analytics</option>
+                                <option>Finance</option>
+                                <option>Strategic Management</option>
+                                <option>Leadership</option>
+								<option>Communication</option>
+								<option>Human Relations</option>
+								<option>Entrepreneurship</option>
+								<option>Others</option>
+                                </select>
+                                </div>
+                        </div>
+						</div>
+					</div>
+					<div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">Contact info</h4>
+                        </div>
+						<div class="panel-body">
+						<div class="form-group">
+                            <label class="col-sm-2 control-label">Mobile number</label>
+                            <div class="col-sm-10">
+                            <input type="tel" class="form-control"></input>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">E-mail</label>
+                            <div class="col-sm-10">
+                            <input type="email" class="form-control"></input>
+                            </div>
+                        </div>
+						<div class="form-group">
+                            <label class="col-sm-2 control-label">Address</label>
+                            <div class="col-sm-10">
+                            <textarea rows="3" class="form-control"></textarea>
+                            </div>
+                        </div>
+						</div>
+				    </div>
+					<div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">Work Experience & Education</h4>
+                        </div>
+						<div class="panel-body">
+						<div class="form-group">
+                                <label class="col-sm-2 control-label">Employment status</label>
+                                <div class="col-sm-10">
+                                <select class="form-control">
+                                <option selected="">Select your current status</option>
+								<option>Student</option>
+                                <option>Employed full-time</option>
+                                <option>Employed part-time</option>
+                                <option>Self employed full-time</option>
+                                <option>self employed part-time</option>
+                                <option>Unemployed, looking for work</option>
+								<option>Unemployed, not looking for work</option>
+                                </select>
+                                </div>
+                        </div>
+                        <div class="form-group">
+                                <label class="col-sm-2 control-label">Experience Level</label>
+                                <div class="col-sm-10">
+                                <select class="form-control">
+                                <option selected="">Select your relevant experience levek</option>
+								<option>Intern/Trainee</option>
+                                <option>Junior</option>
+                                <option>Mid-level</option>
+                                <option>Manager</option>
+                                <option>Senior</option>
+                                <option>Not applicable</option>
+                                </select>
+                                </div>
+                        </div>
+						<div class="form-group">
+                                <label class="col-sm-2 control-label">Highest Degree</label>
+                                <div class="col-sm-10">
+                                <select class="form-control">
+                                <option selected="">Select your highest level of education</option>
+								<option>Less than high school diploma</option>
+                                <option>High school diploma</option>
+                                <option>Bachelor's degree</option>
+                                <option>Master's degeree</option>
+                                <option>Some college but no degree</option>
+                                </select>
+                                </div>
+                        </div>
+						<div class="form-group">
+                                <label class="col-sm-2 control-label">Details Privacy</label>
+                                <div class="col-sm-4">
+                                <select class="form-control">
+                                <option selected="">Only me</option>
+								<option>Coursera Community</option>
+                                <option>Everybody on web</option>
+								</select>
+								</div>
+						</div>
+						</div>
+				    </div>
+					<button class="btn btn-primary" style="margin-left:35%;"><a href="#" style="color:white;">Save Changes</a></button>
+					<button class="btn " style="margin-left:3%;"><a href="#" style="color:black;"> Cancel </a></button>
+					</div>
+				</form>
+			</div>
+		</div>
+	  </div>
+  </body>
+  </html>
